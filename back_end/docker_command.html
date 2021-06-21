@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docker 基本操作 | DanielGao&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Hello World">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.84cbfe9a.js" as="script"><link rel="preload" href="/assets/js/2.97ad032c.js" as="script"><link rel="preload" href="/assets/js/16.0ad1fc40.js" as="script"><link rel="prefetch" href="/assets/js/10.6f6050b0.js"><link rel="prefetch" href="/assets/js/11.314a169a.js"><link rel="prefetch" href="/assets/js/12.44c5ee57.js"><link rel="prefetch" href="/assets/js/13.f2574ab5.js"><link rel="prefetch" href="/assets/js/14.9878853c.js"><link rel="prefetch" href="/assets/js/15.6fb7ebac.js"><link rel="prefetch" href="/assets/js/17.24a22417.js"><link rel="prefetch" href="/assets/js/18.f1919206.js"><link rel="prefetch" href="/assets/js/19.25662fd9.js"><link rel="prefetch" href="/assets/js/3.60832a0f.js"><link rel="prefetch" href="/assets/js/4.e7c996f5.js"><link rel="prefetch" href="/assets/js/5.6eff8140.js"><link rel="prefetch" href="/assets/js/6.17d5dd20.js"><link rel="prefetch" href="/assets/js/7.e59ee139.js"><link rel="prefetch" href="/assets/js/8.7162edc7.js"><link rel="prefetch" href="/assets/js/9.67af75ac.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">DanielGao's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Back End
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/back_end/docker_command.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Docker 命令
+</a></li><li class="dropdown-subitem"><a href="/back_end/docker_jottings.html" class="nav-link">
+  Docker 随笔
+</a></li><li class="dropdown-subitem"><a href="/back_end/Kubernetes.html" class="nav-link">
+  K8S
+</a></li><li class="dropdown-subitem"><a href="/back_end/redis_start.html" class="nav-link">
+  Redis Start
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Algorithm notes
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/algorithm/basic_template.html" class="nav-link">
+  常用算法模板
+</a></li><li class="dropdown-subitem"><a href="/algorithm/PAT.html" class="nav-link">
+  PAT tips
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="随便写写" class="dropdown-title"><span class="title">随便写写</span> <span class="arrow down"></span></button> <button type="button" aria-label="随便写写" class="mobile-dropdown-title"><span class="title">随便写写</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/jottings/introduction.html" class="nav-link">
+  前言
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Gaoyan1999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Back End
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/back_end/docker_command.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Docker 命令
+</a></li><li class="dropdown-subitem"><a href="/back_end/docker_jottings.html" class="nav-link">
+  Docker 随笔
+</a></li><li class="dropdown-subitem"><a href="/back_end/Kubernetes.html" class="nav-link">
+  K8S
+</a></li><li class="dropdown-subitem"><a href="/back_end/redis_start.html" class="nav-link">
+  Redis Start
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Algorithm notes
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/algorithm/basic_template.html" class="nav-link">
+  常用算法模板
+</a></li><li class="dropdown-subitem"><a href="/algorithm/PAT.html" class="nav-link">
+  PAT tips
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="随便写写" class="dropdown-title"><span class="title">随便写写</span> <span class="arrow down"></span></button> <button type="button" aria-label="随便写写" class="mobile-dropdown-title"><span class="title">随便写写</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/jottings/introduction.html" class="nav-link">
+  前言
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Gaoyan1999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Docker 基本操作</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/back_end/docker_command.html#docker-基本操作" class="sidebar-link">Docker 基本操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/back_end/docker_command.html#quick-start" class="sidebar-link">Quick Start</a></li><li class="sidebar-sub-header"><a href="/back_end/docker_command.html#container" class="sidebar-link">Container</a></li><li class="sidebar-sub-header"><a href="/back_end/docker_command.html#iamges" class="sidebar-link">Iamges</a></li><li class="sidebar-sub-header"><a href="/back_end/docker_command.html#查看日志" class="sidebar-link">查看日志</a></li><li class="sidebar-sub-header"><a href="/back_end/docker_command.html#必要操作" class="sidebar-link">必要操作</a></li><li class="sidebar-sub-header"><a href="/back_end/docker_command.html#容器的生命周期" class="sidebar-link">容器的生命周期</a></li><li class="sidebar-sub-header"><a href="/back_end/docker_command.html#dockerfile" class="sidebar-link">Dockerfile</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="docker-基本操作"><a href="#docker-基本操作" class="header-anchor">#</a> Docker 基本操作</h2> <blockquote><p>基于容器技术的轻量级虚拟化解决方案</p></blockquote> <ul><li>统一了基础设施</li> <li>统一了程序打包方式</li> <li>统一了程序部署(运行)方式</li></ul> <blockquote><p>资源隔离</p></blockquote> <h3 id="quick-start"><a href="#quick-start" class="header-anchor">#</a> Quick Start</h3> <div class="language- extra-class"><pre class="language-text"><code>docker run -d -p 80:80 docker/getting-started
+</code></pre></div><p>You'll notice a few flags being used. Here's some more info on them:</p> <ul><li><code>-d</code> - run the container in detached mode (in the background)</li> <li><code>-p 80:80</code> - map port 80 of the host to port 80 in the container</li> <li><code>docker/getting-started</code> - the image to use</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>docker hello-world
+</code></pre></div><p>To generate this message, Docker took the following steps:</p> <ol><li>The Docker client contacted the Docker daemon.</li> <li>The Docker daemon pulled the &quot;hello-world&quot; image from the Docker Hub.
+(amd64)</li> <li>The Docker daemon created a new container from that image which runs the
+executable that produces the output you are currently reading.</li> <li>The Docker daemon streamed that output to the Docker client, which sent it
+to your terminal.</li></ol> <blockquote><p>镜像结构</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token variable">${registry_name}</span>/<span class="token variable">${repository_name}</span>/<span class="token variable">${image_name}</span><span class="token builtin class-name">:</span><span class="token variable">${tag_name}</span>
+</code></pre></div><ul><li>some simple command</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>docker login docker.in
+docker pull alpine:<span class="token operator">&lt;</span>release_version<span class="token operator">&gt;</span> 
+<span class="token comment"># check images</span>
+docker images
+docker search <span class="token operator">&lt;</span>images<span class="token operator">&gt;</span>
+docker tag 7731472c3f2a docker.io/danielgao/alpine:v3.10.3
+</code></pre></div><blockquote><p>push images</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code>docker push docker.io/danielgao/alpine:v3.10.3
+</code></pre></div><blockquote><p>delete</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#delete tags</span>
+docker rmi dokcer.io/danielgao/alpine:v3.10.3
+<span class="token comment">#delete  images</span>
+docker rmi -f <span class="token operator">&lt;</span>tag<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="container"><a href="#container" class="header-anchor">#</a> Container</h3> <p>由镜像实例化而来</p> <div class="language-bash extra-class"><pre class="language-bash"><code>docker <span class="token function">ps</span> -a
+<span class="token comment"># setup a container</span>
+docker run -ti danielgao/alpine:v3.10.3 /bin/sh
+
+<span class="token comment">#  when exit  delete container</span>
+docker run --rm <span class="token operator">&lt;</span>images<span class="token operator">&gt;</span>
+
+<span class="token comment"># 挂在后台</span>
+docker run -d --name myContainer <span class="token operator">&lt;</span>images<span class="token operator">&gt;</span>  /bin/sleep <span class="token number">300</span>
+
+<span class="token comment"># 启动停止的容器</span>
+docker start <span class="token operator">&lt;</span>containerId<span class="token operator">&gt;</span>
+
+<span class="token comment"># enter a container  推出不会停止容器</span>
+docker <span class="token builtin class-name">exec</span> -ti <span class="token operator">&lt;</span>containerId<span class="token operator">&gt;</span> /bin/sh
+
+<span class="token comment">#docker stop</span>
+docker stop <span class="token operator">&lt;</span>containerId<span class="token operator">&gt;</span>
+
+<span class="token comment"># -d : 后台运行. -P 将容器内部使用的网络端口随机映射到我们使用的主机上</span>
+docker run -d -P training/webapp python app.py
+
+
+<span class="token comment">#delete container</span>
+docker <span class="token function">rm</span>  id/name
+
+<span class="token comment"># 开启一个容器</span>
+docker run -itd centos /bin/bash
+
+
+<span class="token comment">#filter all exited container</span>
+docker <span class="token function">rm</span>  <span class="token variable"><span class="token variable">`</span>docker <span class="token function">ps</span> -a -q<span class="token variable">`</span></span>
+</code></pre></div><h3 id="iamges"><a href="#iamges" class="header-anchor">#</a> Iamges</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#export images</span>
+docker save <span class="token operator">&lt;</span>IMAGE ID<span class="token operator">&gt;</span> <span class="token operator">&gt;</span> xxxx.tar
+
+<span class="token comment">#remove iamges</span>
+docker rmi -f <span class="token operator">&lt;</span>IMAGE ID<span class="token operator">&gt;</span>
+
+<span class="token comment">#import</span>
+docker load <span class="token operator">&lt;</span>  xxx.tar
+<span class="token comment">#re tag</span>
+docker tag <span class="token operator">&lt;</span>IMAGE ID<span class="token operator">&gt;</span> danielgao/alpine:v3.10.3
+</code></pre></div><h3 id="查看日志"><a href="#查看日志" class="header-anchor">#</a> 查看日志</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>
+<span class="token comment">#  让 docker logs 像使用 tail -f 一样来输出容器内部的标准输出。</span>
+docker logs -f <span class="token operator">&lt;</span>container id<span class="token operator">&gt;</span>
+
+</code></pre></div><h3 id="必要操作"><a href="#必要操作" class="header-anchor">#</a> 必要操作</h3> <blockquote><p>映射端口</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># -p 设置端口 -d 在后台 -rm 用完就删</span>
+docker run -d  -p external:internal <span class="token operator">&lt;</span>image name<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span>
+
+docker run --rm --name mynigix -d  -p81:80 danielgao/nginx:v1.12.2 
+</code></pre></div><blockquote><p>挂载数据卷</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#-v&lt;宿主文件&gt;:&lt;容器&gt; 挂载数据卷</span>
+docker run -d --rm --name nginx_with_baidu -p82:80 -v/Users/gaoyan/dockerStudy:/usr/share/nginx/html danielgao/nginx:v1.12.2
+</code></pre></div><p>​	关联文件系统</p> <blockquote><p>传递环境变量</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># - e 引入环境变量</span>
+
+docker run --rm -e <span class="token assign-left variable">E_OPTS</span><span class="token operator">=</span>abc danielgao/nginx:v1.12.2 <span class="token function">printenv</span>
+</code></pre></div><blockquote><p>容器内 install tools</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 将容器提交为镜像</span>
+docker commit -p c95050c0cbff  danielgao/niginx:curl
+
+<span class="token comment"># 推到公网</span>
+docker push danielgao/nginx:v1.12.2
+</code></pre></div><h3 id="容器的生命周期"><a href="#容器的生命周期" class="header-anchor">#</a> 容器的生命周期</h3> <ol><li>检索本地是否有镜像，没有就去远端找</li> <li>利用镜像启动容器</li> <li>分配文件系统，并在只读的镜像层挂载一个可读写层</li> <li>从宿主机配置的网桥接口中桥接一个虚拟接口到容器</li> <li>地址池分配ip</li> <li>执行</li> <li>执行完毕后终止</li></ol> <h3 id="dockerfile"><a href="#dockerfile" class="header-anchor">#</a> Dockerfile</h3> <blockquote><p>构建镜像的源码</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#构建命令</span>
+docker build .-t <span class="token punctuation">[</span>registry<span class="token punctuation">]</span>/<span class="token punctuation">[</span>registry<span class="token punctuation">]</span>:<span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
+
+
+docker build <span class="token builtin class-name">.</span> -t danielgao/nginx:v1.12.2_with_user_workdir
+
+docker run  --rm -ti --name ngx123 danielgao/nginx:v1.12.2_with_user_workdir /bin/bash
+</code></pre></div><div class="language-dockerfile extra-class"><pre class="language-dockerfile"><code><span class="token keyword">FROM</span> danielgao/nginx<span class="token punctuation">:</span>v1.12.2
+<span class="token keyword">USER</span> nginx
+<span class="token keyword">WORKDIR</span> /usr/share/nginx/html
+<span class="token comment">#把资源固化到容器里</span>
+<span class="token keyword">ADD</span> index.html /user/share/nginx/html/index.html  
+<span class="token comment">#暴露端口</span>
+<span class="token keyword">EXPOSE</span> 80
+
+
+<span class="token keyword">FROM</span> centos<span class="token punctuation">:</span>7
+<span class="token keyword">ENV</span> VER=9.11.4
+<span class="token keyword">RUN</span> yum install bind<span class="token punctuation">-</span>$VER <span class="token punctuation">-</span>y
+
+
+<span class="token comment">#cmd 指令</span>
+<span class="token keyword">FROM</span> centos
+<span class="token keyword">RUN</span> yum install httpd <span class="token punctuation">-</span>y
+<span class="token keyword">CMD</span> <span class="token punctuation">[</span><span class="token string">&quot;httpd&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;-D&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;FOREGROUND&quot;</span><span class="token punctuation">]</span>
+
+
+<span class="token comment">#entrypoint.sh  默认的启动脚本</span>
+
+<span class="token keyword">FROM</span> centos<span class="token punctuation">:</span>7
+
+<span class="token keyword">ADD</span> entrypoint.sh /entrypoint.sh
+
+<span class="token keyword">RUN</span> yum install epel<span class="token punctuation">-</span>release <span class="token punctuation">-</span>q <span class="token punctuation">-</span>y &amp;&amp; yum install nginx <span class="token punctuation">-</span>y
+
+<span class="token keyword">ENTRYPOINT</span>   /entrypoint.sh
+
+</code></pre></div><p>Entrypront.sh</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token shebang important">#!/bin/bash</span>
+
+/sbin/nginx -g <span class="token string">&quot;daemon off;&quot;</span>
+
+<span class="token comment">#chomod +x entrypoint.sh</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.84cbfe9a.js" defer></script><script src="/assets/js/2.97ad032c.js" defer></script><script src="/assets/js/16.0ad1fc40.js" defer></script>
+  </body>
+</html>

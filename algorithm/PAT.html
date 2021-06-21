@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PAT Preparation | DanielGao&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Hello World">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.84cbfe9a.js" as="script"><link rel="preload" href="/assets/js/2.97ad032c.js" as="script"><link rel="preload" href="/assets/js/8.7162edc7.js" as="script"><link rel="prefetch" href="/assets/js/10.6f6050b0.js"><link rel="prefetch" href="/assets/js/11.314a169a.js"><link rel="prefetch" href="/assets/js/12.44c5ee57.js"><link rel="prefetch" href="/assets/js/13.f2574ab5.js"><link rel="prefetch" href="/assets/js/14.9878853c.js"><link rel="prefetch" href="/assets/js/15.6fb7ebac.js"><link rel="prefetch" href="/assets/js/16.0ad1fc40.js"><link rel="prefetch" href="/assets/js/17.24a22417.js"><link rel="prefetch" href="/assets/js/18.f1919206.js"><link rel="prefetch" href="/assets/js/19.25662fd9.js"><link rel="prefetch" href="/assets/js/3.60832a0f.js"><link rel="prefetch" href="/assets/js/4.e7c996f5.js"><link rel="prefetch" href="/assets/js/5.6eff8140.js"><link rel="prefetch" href="/assets/js/6.17d5dd20.js"><link rel="prefetch" href="/assets/js/7.e59ee139.js"><link rel="prefetch" href="/assets/js/9.67af75ac.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">DanielGao's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Back End
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/back_end/docker_command.html" class="nav-link">
+  Docker 命令
+</a></li><li class="dropdown-subitem"><a href="/back_end/docker_jottings.html" class="nav-link">
+  Docker 随笔
+</a></li><li class="dropdown-subitem"><a href="/back_end/Kubernetes.html" class="nav-link">
+  K8S
+</a></li><li class="dropdown-subitem"><a href="/back_end/redis_start.html" class="nav-link">
+  Redis Start
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Algorithm notes
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/algorithm/basic_template.html" class="nav-link">
+  常用算法模板
+</a></li><li class="dropdown-subitem"><a href="/algorithm/PAT.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  PAT tips
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="随便写写" class="dropdown-title"><span class="title">随便写写</span> <span class="arrow down"></span></button> <button type="button" aria-label="随便写写" class="mobile-dropdown-title"><span class="title">随便写写</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/jottings/introduction.html" class="nav-link">
+  前言
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Gaoyan1999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Back End
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/back_end/docker_command.html" class="nav-link">
+  Docker 命令
+</a></li><li class="dropdown-subitem"><a href="/back_end/docker_jottings.html" class="nav-link">
+  Docker 随笔
+</a></li><li class="dropdown-subitem"><a href="/back_end/Kubernetes.html" class="nav-link">
+  K8S
+</a></li><li class="dropdown-subitem"><a href="/back_end/redis_start.html" class="nav-link">
+  Redis Start
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Algorithm notes
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/algorithm/basic_template.html" class="nav-link">
+  常用算法模板
+</a></li><li class="dropdown-subitem"><a href="/algorithm/PAT.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  PAT tips
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="随便写写" class="dropdown-title"><span class="title">随便写写</span> <span class="arrow down"></span></button> <button type="button" aria-label="随便写写" class="mobile-dropdown-title"><span class="title">随便写写</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/jottings/introduction.html" class="nav-link">
+  前言
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Gaoyan1999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>PAT Preparation</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/algorithm/PAT.html#tip-for-c" class="sidebar-link">tip for c++</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/algorithm/PAT.html#string-操作" class="sidebar-link">String 操作</a></li><li class="sidebar-sub-header"><a href="/algorithm/PAT.html#pair-操作" class="sidebar-link">pair  操作</a></li><li class="sidebar-sub-header"><a href="/algorithm/PAT.html#queue" class="sidebar-link">Queue</a></li><li class="sidebar-sub-header"><a href="/algorithm/PAT.html#set" class="sidebar-link">Set</a></li></ul></li><li><a href="/algorithm/PAT.html#题型分类" class="sidebar-link">题型分类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/algorithm/PAT.html#dfs-➕树-图" class="sidebar-link">DFS ➕树 /图</a></li><li class="sidebar-sub-header"><a href="/algorithm/PAT.html#bfs" class="sidebar-link">BFS</a></li><li class="sidebar-sub-header"><a href="/algorithm/PAT.html#stl-操作" class="sidebar-link">STL 操作</a></li></ul></li><li><a href="/algorithm/PAT.html#djikstra" class="sidebar-link">Djikstra</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/algorithm/PAT.html#并查集" class="sidebar-link">并查集</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="pat-preparation"><a href="#pat-preparation" class="header-anchor">#</a> PAT Preparation</h1> <blockquote><p>高频英语单词</p></blockquote> <p>non-decreasing order  非降序</p> <p>alphanumerical characters  字母数字字符</p> <p>lexicographically  字典序</p> <p>Quadratic probing: 平方探测法、若有冲突则加平方（1，4，9……）</p> <p>capital English letters 大写字母</p> <p>pre/in/Post order 前、中、后</p> <p>polynomials  多项式</p> <p>Exponents and coefficients  指数和系数</p> <h2 id="tip-for-c"><a href="#tip-for-c" class="header-anchor">#</a> tip for c++</h2> <ul><li>进制转换</li></ul> <p>将⼗进制 a 转换为 b 进制数，当 a 不等于 0 时，将 a%b 从后往前倒序保存下来，每次保存后 将 a/b 。这样倒序保存的数就是⼗进制 a 在 b 进制下的结果。</p> <ul><li>辗转相除求公约数</li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>int gcd(int a,int b){
+	return b ==0 ? a:gcd(b,a%b);
+}
+</code></pre></div><ul><li>⼤数组必须开全局</li></ul> <h3 id="string-操作"><a href="#string-操作" class="header-anchor">#</a> String 操作</h3> <ul><li>读入一行操作</li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>string s;
+getline(cin,s);
+</code></pre></div><ul><li>判断字符串</li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>#include&lt;cctype&gt;
+isalnum  是字母数字
+isalpha 是字母
+isdigit 是数字
+isupper 是大写字母
+islower 是小写字母
+isblank 是空格/table
+isspace 是空格回车
+  
+</code></pre></div><ul><li>字符串转int</li></ul> <div class="language-java extra-class"><pre class="language-java"><code>a2<span class="token operator">=</span><span class="token function">atoi</span><span class="token punctuation">(</span>p2<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><p>判断char[] 长度  strlen(a)</p></li> <li><p>截取</p></li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>string s =&quot;01234&quot;;
+s.substr(1,2);//12
+s.substr(0,1);//0
+</code></pre></div><h3 id="pair-操作"><a href="#pair-操作" class="header-anchor">#</a> pair  操作</h3> <div class="language-c++ extra-class"><pre class="language-text"><code>typedef pair&lt;string,int&gt; p;
+vector&lt;p&gt; v;
+p temp=make_pair(&quot;abc&quot;,123);//insert
+temp.first   temp.second//get
+
+</code></pre></div><h3 id="queue"><a href="#queue" class="header-anchor">#</a> Queue</h3> <div class="language-c++ extra-class"><pre class="language-text"><code>q.push();
+q.front();//look up the first element
+q.pop(); //delete  top
+</code></pre></div><h3 id="set"><a href="#set" class="header-anchor">#</a> Set</h3> <ul><li>基本操作</li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>s.find(num)!=s.end();
+s.insert(1);
+</code></pre></div><ul><li>Get</li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>set&lt;int&gt;::iterator it=s.begin();
+cout&lt;&lt;*it;
+</code></pre></div><ul><li>求交集</li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>#include &lt;algorithm&gt;
+
+set&lt;int&gt; inter;
+set&lt;int&gt; a;
+set&lt;int&gt; b;
+set_intersection(a.begin(),a.end(),b.begin(),b.end(),inserter(inter,inter.begin()));
+
+</code></pre></div><h2 id="题型分类"><a href="#题型分类" class="header-anchor">#</a> 题型分类</h2> <h3 id="dfs-➕树-图"><a href="#dfs-➕树-图" class="header-anchor">#</a> DFS ➕树 /图</h3> <ol><li><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805376476626944" target="_blank" rel="noopener noreferrer">1090 Highest Price in Supply Chain<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ol> <blockquote><p>该题要求构建一个树结构, 求出树的深度，并输出最深的</p></blockquote> <p>超时的代码：如果我们每次都遍历数组，会由于走了许多已经访问过的路而超时</p> <div class="language-c++ extra-class"><pre class="language-text"><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+const int N =100010;
+int arr[N];
+bool vis[N];
+int main(){
+    int n;
+    float p,r;
+    cin&gt;&gt;n;
+    cin&gt;&gt;p&gt;&gt;r;
+        int k =0;
+    for(int i=0;i&lt;n;i++){
+        cin&gt;&gt;arr[i];   
+        if(arr[i]==-1)  vis[i] =1;
+        
+    }
+    int sum=1;
+
+    int deep = 0;
+    while(sum &lt; n){
+         k=0;
+        deep++;
+         vector&lt;int&gt; idx;
+        for(int i=0;i&lt;n;i++){
+            if(vis[i]) continue;           
+           if(vis[arr[i]]==true) {
+               k++;
+                idx.push_back(i);
+           }
+        }
+
+        for(auto x: idx) {vis[x] =true;}
+        sum +=k;
+    }
+      
+  	float  res = p;
+	  r =r/100+1;
+    while(deep--){
+        res *= r;
+    }
+    
+    printf(&quot;%.2f %d\n&quot;,res,k);
+    
+}
+</code></pre></div><p>AC 代码:使用一个二维数组来保存每个节点的子节点</p> <div class="language-c++ extra-class"><pre class="language-text"><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;cmath&gt;
+using namespace std;
+
+const int N =100010;
+int arr[N];
+vector&lt;int&gt; tree[N];
+
+int maxDeep =0,temp=0;
+void dfs(int root,int deep){
+     if(deep==maxDeep){
+         temp++;         
+     }else if(deep &gt;maxDeep){
+         maxDeep = deep;
+         temp=1;
+     }
+
+
+    for(int x : tree[root]){
+        dfs(x,deep+1);
+    }
+}
+
+int main(){
+    int n;
+    double p,r;
+    cin&gt;&gt;n;
+    cin&gt;&gt;p&gt;&gt;r;
+
+    int root =-1;
+    for(int i=0;i&lt;n;i++){
+           int j;
+            cin&gt;&gt;j;
+        if(j == -1) root = i;
+      else   tree[j].push_back(i);
+    }
+        
+    dfs(root,0);
+    
+
+    
+    printf(&quot;%.2f %d\n&quot;,p * pow((1+r/100),maxDeep),temp);
+    
+}
+</code></pre></div><h3 id="bfs"><a href="#bfs" class="header-anchor">#</a> BFS</h3> <p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805375457411072" target="_blank" rel="noopener noreferrer">1091 Acute Stroke<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <blockquote><p>经典的BFS题目，只是此题是个三维的～。给到一个三维矩阵，找出大于某个阈值的连通块，求出所有连通块的和</p></blockquote> <p>tips: 使用向量来简化方向的判断</p> <div class="language-c++ extra-class"><pre class="language-text"><code>#include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+struct node {
+    int x, y, z;
+};
+int m, n, l, t;
+int X[6] = {1, 0, 0, -1, 0, 0};
+int Y[6] = {0, 1, 0, 0, -1, 0};
+int Z[6] = {0, 0, 1, 0, 0, -1};
+int arr[1300][130][80];
+bool vis[1300][130][80];
+bool judge(int x, int y, int z) {
+ if(x&lt;0||x&gt;=m||y&lt;0||y&gt;=n||z&lt;0||z&gt;=l) return false;
+  if(arr[x][y][z]==0 || vis[x][y][z]) return false;
+  return true;
+}
+int bfs(int x, int y, int z) {
+  	int cnt =0;
+    node temp;
+    temp.x =x ,temp.y=y,temp.z=z;
+    queue&lt;node&gt; qq;
+    vis[x][y][z]=true;
+    qq.push(temp);
+    while(!qq.empty()){
+  		node top = qq.front();
+     	qq.pop();
+      cnt++;
+      for(int i=0;i&lt;6;i++){
+        int tx= top.x + X[i];
+        int ty= top.y + Y[i];
+        int tz= top.z + Z[i];
+        if(judge(tx,ty,tz)){
+          vis[tx][ty][tz]=true;
+          temp.x =tx ,temp.y=ty,temp.z=tz;
+          qq.push(temp);
+        }
+      }
+    }
+  if(cnt &gt;=t){
+    return cnt;
+  }else {
+    return 0;
+  }
+}
+int main() {
+    scanf(&quot;%d %d %d %d&quot;, &amp;m, &amp;n, &amp;l, &amp;t);
+    for(int i = 0; i &lt; l; i++)
+        for(int j = 0; j &lt; m; j++)
+            for(int k = 0; k &lt; n; k++)
+                scanf(&quot;%d&quot;, &amp;arr[j][k][i]);
+    int ans = 0;
+    for(int i = 0; i &lt; l; i++) {
+        for(int j = 0; j &lt; m; j++) {
+            for(int k = 0; k &lt; n; k++) {
+                if(arr[j][k][i] == 1 &amp;&amp; vis[j][k][i] == false)
+                    ans += bfs(j, k, i);
+            }
+        }
+    }
+    printf(&quot;%d&quot;, ans);
+    return 0;
+}
+</code></pre></div><p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805372601090048" target="_blank" rel="noopener noreferrer">1094 The Largest Generation <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>输出树中节点最多的层级以及节点的个数（经典BFS）</p> <div class="language-c++ extra-class"><pre class="language-text"><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+const int N = 110;
+vector&lt;int&gt; child[N];
+
+int level =0,max_generation=0;
+
+void bfs(int l){
+  queue&lt;int&gt; q;
+  q.push(1);
+  while(!q.empty()){
+   int length = q.size();
+    l ++;
+    if(length &gt; max_generation){
+      max_generation = length;
+      level =l;      
+    }
+    for(int i=0;i&lt;length;i++){
+      int top =q.front();
+      q.pop();
+      for(int cd:child[top]){
+        q.push(cd);
+      }
+    }
+  }
+  
+}
+
+int main (){
+  int n,m;
+  cin&gt;&gt;n&gt;&gt;m;
+  for(int i=0;i&lt;m;i++){
+    int node,k;
+    cin&gt;&gt;node&gt;&gt;k;
+    while(k--){
+      int cd;
+      cin&gt;&gt;cd;
+      child[node].push_back(cd);
+    }
+  }
+  
+  bfs(0);
+  cout&lt;&lt;max_generation &lt;&lt;&quot; &quot;&lt;&lt;level&lt;&lt;endl;
+  
+}
+</code></pre></div><h3 id="stl-操作"><a href="#stl-操作" class="header-anchor">#</a> STL 操作</h3> <p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805371602845696" target="_blank" rel="noopener noreferrer">1095 Cars on Campus <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>统计时间，map、vector 的使用，字典排序</p> <p>Tips：</p> <ul><li>string 建议用char * 代替</li> <li>时间操作</li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+#include &lt;vector&gt;
+#include &lt;cstring&gt;
+#include &lt;map&gt;
+using namespace  std;
+
+
+const int N = 10010;
+struct node{
+    char s[10];
+    int time;
+    int in;
+};
+
+bool cmp( node r1, node  r2){
+    if(strcmp(r1.s,r2.s) != 0) return strcmp(r1.s,r2.s) &lt;0;
+    else return r1.time&lt;r2.time;
+}
+
+bool cmp2(node a,node b){
+    return a.time&lt;b.time;
+}
+
+int main(){
+    int n,k,maxtime = -1,tempindex=0;
+    cin&gt;&gt;n&gt;&gt;k;
+    vector&lt;node&gt; record(n),car;
+    for(int i=0;i&lt;n;i++){
+        char  in[5];
+        int h,m,ss;
+        scanf(&quot;%s %d:%d:%d %s\n&quot;,record[i].s,&amp;h,&amp;m,&amp;ss,in);
+        int time = h*3600 + m*60 + ss;
+        record[i].time =time ;
+        record[i].in =  strcmp(in,&quot;in&quot;)== 0  ?1:-1;
+    }
+    sort(record.begin(),record.end(),cmp);
+
+    map&lt;string,int&gt; mapp;
+    for(int i=0;i&lt;n-1;i++){
+        if(strcmp(record[i].s,record[i+1].s)==0  &amp;&amp; record[i].in==1 &amp;&amp; record[i+1].in==-1){
+            //match
+            car.push_back(record[i]);
+            car.push_back(record[i+1]);
+            mapp[record[i].s] += (record[i+1].time-record[i].time);
+            if(maxtime &lt; mapp[record[i].s]) {
+              maxtime =   mapp[record[i].s];
+            }
+        }
+    }
+    sort(car.begin(),car.end(),cmp2);
+    vector&lt;int&gt; cnt(n);
+    for(int i=0;i&lt;car.size();i++){
+        if(i==0){
+            cnt[i] = car[i].in;
+        }else {
+            cnt[i] =cnt[i-1]+ car[i].in;
+        }
+    }
+
+    for(int i=0;i&lt;k;i++){
+        int h, m, s;
+        scanf(&quot;%d:%d:%d&quot;, &amp;h, &amp;m, &amp;s);
+        int temptime = h * 3600 + m * 60 + s;
+        int j;
+        for(j=tempindex;j&lt;car.size();j++){
+            if(car[j].time &gt; temptime){
+                printf(&quot;%d\n&quot;,cnt[j-1]);
+                break;
+            }else if(j==car.size()-1){
+                printf(&quot;%d\n&quot;,cnt[j]);
+            }
+        }
+        tempindex =j;
+
+    }
+    for(map&lt;string, int&gt;::iterator it = mapp.begin(); it != mapp.end(); it++) {
+        if(it-&gt;second == maxtime)
+            printf(&quot;%s &quot;, it-&gt;first.c_str());
+    }
+    printf(&quot;%02d:%02d:%02d&quot;, maxtime / 3600, (maxtime % 3600) / 60, maxtime % 60);
+    return 0;
+
+
+}
+</code></pre></div><ol start="1068"><li>找硬币（背包 贪心问题）</li></ol> <h2 id="djikstra"><a href="#djikstra" class="header-anchor">#</a> Djikstra</h2> <blockquote><p>Djik 算法在找到某个点最小路径后，不会存在任何路径，小于等于这个值。所以不会再对该点进行任何操作</p></blockquote> <ul><li><p>Dijk 保存路径</p></li> <li><p>Dijk 求路径个数   (PAT Emergency 1003)</p></li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+int matrix[510][510];
+bool vis[510] = {false};
+int rescue[510];
+int dist[510];
+const int MAX = 9999999999;
+int main() {
+    int n, m;
+    int start, end;
+    cin &gt;&gt; n &gt;&gt; m;
+    cin &gt;&gt; start &gt;&gt; end;
+    for (int i = 0; i &lt; n; i++) scanf(&quot;%d&quot;, &amp;rescue[i]);
+    fill(matrix[0], matrix[0] + 510 * 510, MAX);
+    for (int i = 0; i &lt; n; i++) matrix[i][i] = 0;
+    for (int i = 0; i &lt; m; i++) {
+        int a, b, c;
+        cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;
+        matrix[a][b] = matrix[b][a] = c;
+    }
+    int visit = n - 1;
+    vis[start] = 1;
+    for (int i = 0; i &lt; n; i++) dist[i] = matrix[start][i];
+    int teams[n];
+    int paths[n];
+    for(int i=0;i&lt;n;i++){
+        if(matrix[start][i]&lt;MAX &amp;&amp; i!=start) {
+            paths[i]=1;
+            teams[i]=rescue[i]+rescue[start];
+        }else{
+            paths[i]=0;
+        }
+    }
+    paths[start]=1;
+    teams[start]=rescue[start];
+    while (true) {
+        int minIndex = -1;
+        int min = MAX;
+        for (int i = 0; i &lt; n; i++) {
+            if (vis[i] == false &amp;&amp; dist[i] &lt; min) {
+                minIndex = i;
+                min = dist[i];
+            }
+        }
+        vis[minIndex] = true;
+        visit--;
+        if (visit&lt;=0) break;
+        for (int i = 0; i &lt; n; i++) {
+            if (vis[i] == false) {
+                if (dist[i] &gt; dist[minIndex] + matrix[minIndex][i]) {
+                    dist[i]=dist[minIndex] + matrix[minIndex][i];
+                    paths[i]=paths[minIndex];
+                    teams[i]=teams[minIndex]+rescue[i];
+                }else if(dist[i] == dist[minIndex] + matrix[minIndex][i]){
+                    paths[i]+=paths[minIndex];
+                    if(teams[i]&lt;teams[minIndex]+rescue[i]) teams[i]=teams[minIndex]+rescue[i];
+                }
+            }
+        }
+    }
+    cout &lt;&lt; paths[end]&lt;&lt;&quot; &quot;&lt;&lt;teams[end];
+}
+</code></pre></div><h2 id="并查集"><a href="#并查集" class="header-anchor">#</a> 并查集</h2> <ul><li>找父节点，并且压缩</li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>int findFather(int x){
+  int t=x;
+	while(x!=fa[x]) x=fa[x];
+  // 优化压缩
+	while(t!=fa[t]){
+    int z=t;
+    t=fa[t];
+    fa[z]=x;
+  }
+  return x;
+}
+</code></pre></div><ul><li>合并</li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>void Union(int a,int b){
+  int faA=findFather(a);
+  int faB=findFather(b);
+ if(faA!=faB) fa[faA]=faB;
+}
+</code></pre></div><ul><li><p>1076  深搜  超时</p></li> <li><p>并查集</p></li> <li><p>Dfs 1079</p></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.84cbfe9a.js" defer></script><script src="/assets/js/2.97ad032c.js" defer></script><script src="/assets/js/8.7162edc7.js" defer></script>
+  </body>
+</html>
